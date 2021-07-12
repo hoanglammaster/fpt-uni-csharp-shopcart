@@ -4,12 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <title>Cart
+    </title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:GridView runat="server" ID="sourceBook" AutoGenerateColumns="false" EnableViewState="true">
+        <div class="form__container--left">
+            <asp:GridView CssClass="form__table--containter" runat="server" ID="sourceBook" AutoGenerateColumns="false" EnableViewState="true">
                 <Columns>
                     <asp:BoundField DataField="Id" HeaderText="Id" />
                     <asp:BoundField DataField="Name" HeaderText="Book Name" />
@@ -35,9 +37,11 @@
                 </Columns>
             </asp:GridView>
         </div>
-        <div>
-            <asp:Label runat="server" EnableViewState="true" ID="total"></asp:Label>
-            <asp:Button runat="server" ID="Buy" Text="Buy Now!" OnClick="Buy_Click"/>
+        <div class="form__container--right">
+            <div class="cart__container">
+                <asp:Label CssClass="cart__number" runat="server" EnableViewState="true" ID="total"></asp:Label>
+                <asp:Button runat="server" ID="Buy" Text="Buy Now!" OnClick="Buy_Click" />
+            </div>
         </div>
     </form>
 </body>

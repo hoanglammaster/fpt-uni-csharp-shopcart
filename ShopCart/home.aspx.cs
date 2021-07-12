@@ -32,14 +32,18 @@ namespace ShopCart
             {
                 return;
             }
-            int bookInCart = Convert.ToInt32(cart.Text);
-            
-            bookInCart++;
-            cart.Text = bookInCart.ToString();
+
+            IncreaseBookInCart();
             
             int bookId =Convert.ToInt32(sourceBooks.Rows[row.RowIndex].Cells[0].Text);
             sourceBooks.Rows[row.RowIndex].Cells[3].Text = (quantity - 1).ToString();
             AddToSession(bookId);
+        }
+        private void IncreaseBookInCart()
+        {
+            int bookInCart = Convert.ToInt32(cart.Text);
+            bookInCart++;
+            cart.Text = bookInCart.ToString();
         }
         private void AddToSession(int bookId)
         {

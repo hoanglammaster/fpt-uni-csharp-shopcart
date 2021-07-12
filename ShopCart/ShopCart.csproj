@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cart.aspx" />
-    <Content Include="css\book.css" />
+    <Content Include="css\global.css" />
     <Content Include="home.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -77,6 +77,7 @@
     </Compile>
     <Compile Include="DAL\BookDao.cs" />
     <Compile Include="DAL\DAO.cs" />
+    <Compile Include="DAL\OrderDao.cs" />
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

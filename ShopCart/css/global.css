@@ -1,0 +1,59 @@
+﻿body {
+}
+
+
+.form__table--containter {
+    width: 100%;
+}
+
+    .form__table--containter img {
+        width: 250px;
+        height: 200px;
+    }
+    .form__table--containter>tbody>tr{
+        width: 100%;
+    }
+    .form__table--containter > tbody > tr > td{
+        text-align: center;
+    }
+        .form__table--containter > tbody > tr > th{
+            font-weight: 600;
+            font-size : 1.5rem;
+            padding: 5px;
+        }
+        .form__table--containter > tbody > tr > td:first-child {
+            display: none;
+        }
+        .form__table--containter > tbody > tr > th:first-child {
+            display: none;
+        }
+.form__container--left {
+    float: left;
+    width: 80%;
+}
+
+.form__container--right {
+    float: left;
+    width: 15%;
+}
+
+.cart__container {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255,255,255);
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+    .cart__container img {
+        width: 100px;
+        height: 100px;
+    }
+    .cart__container>input{
+        font-size: 1.5em;
+    }
+    .cart__number {
+        font-size: 50px;
+    }
+
+
